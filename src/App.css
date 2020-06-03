@@ -27,8 +27,8 @@
 .App-link {
   color: #61dafb;
 }
-.searchTextField {
-  background-color: #faf3dd;
+.headline {
+  font-size: xx-large;
 }
 @keyframes App-logo-spin {
   from {
