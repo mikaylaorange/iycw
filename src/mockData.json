@@ -1,0 +1,64 @@
+[
+  {
+    "state": "Alabama",
+    "bail_funds": [
+      {
+        "name": "The Montgomery Bailout",
+        "url": "https://www.google.com/url?q=https://givebutter.com/mgmbailout&sa=D&ust=1591058108322000&usg=AFQjCNGJvBLHsC_XLOzy2_HZn6m7KU6sEA"
+      }
+    ]
+  },
+  {
+    "state": "Florida",
+    "bail_funds": [
+      {
+        "name": "Freedom Fund",
+        "url": "https://www.lgbtqfund.org/donate-1"
+      },
+      {
+        "name": "In Memory of Tony Mcdade",
+        "url": "https://www.gofundme.com/f/in-memory-of-tony-mcdade"
+      }
+    ]
+  },
+  {
+    "state": "Hawaii",
+    "bail_funds": [
+      {
+        "name": "Hawaii Community Bail Fund",
+        "url": "https://secure.givelively.org/donate/hawaii-community-bail-fund/hawai-i-community-bail-fund?fbclid=IwAR31iIDX3OiFUsvH5cNUafn9__WSoU691IO4ZAwLwGOadMf7uVjFLLerOE4"
+      }
+    ]
+  },
+  {
+    "state": "Georgia",
+    "bail_funds": [
+      {
+        "name": "I Run With Maud",
+        "url": "https://www.gofundme.com/f/i-run-with-maud"
+      },
+      {
+        "name": "Atlanta Solidarity Fund",
+        "url": "https://actionnetwork.org/fundraising/support-justiceforgeorgefloyd-protesters-in-atlanta/?fbclid=IwAR34mCPPgeE1F8U0pcRdr250r27QrEqWk7WJ9c6VaAmL8kdIWl42t6YfPvE"
+      }
+    ]
+  },
+  {
+    "state": "New Jersey",
+    "bail_funds": [
+      {
+        "name": "Chicago Community Bond Fund",
+        "url": "https://chicagobond.org/donate/"
+      }
+    ]
+  },
+  {
+    "state": "Delaware",
+    "bail_funds": [
+      {
+        "name": "FNB Bail Fund",
+        "url": "https://www.gofundme.com/f/fnbbailfundwilm"
+      }
+    ]
+  }
+]
