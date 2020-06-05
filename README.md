@@ -5,7 +5,7 @@
 </p>
 <br/>
 <h1 align=center>What is it?</h1>
-<p >This platform is a guide for those who would like to help the [#BlackLivesMatter](https://blacklivesmatter.com/) community in the fight for social injustice. As Black people in the United States we face many cases of racial discrimination to a day to day basis, and we'd like to take a ****stand****. Help make a change in history by first using this platform to help those in need of the revolution.  </p>
+<p >This platform is a guide for those who would like to help the #BlackLivesMatter community in the fight for social injustice. As Black people in the United States we face many cases of racial discrimination to a day to day basis, and we'd like to take a stand. Help make a change in history by first using this platform to help those in need of the revolution.  </p>
 <p align="center">Empowered by the inspirational quote by Dr.Martin Luther King Jr:</p>
 
 >“If you can't fly then run, if you can't run then walk, **if you can't walk** then crawl, but whatever you do you have to keep moving forward.”
