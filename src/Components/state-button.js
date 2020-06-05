@@ -6,17 +6,18 @@ import "./state-button.css";
 
 
 function State(props) {
-  const [state_id,setStateId] = useState(null);
+  const [stateId,setStateId] = useState(null);
 
   useEffect(() => {
-    props.P_stateSetter(state_id);
-}, [state_id, props]);
+    props.P_stateSetter(stateId);
+}, [stateId, props]);
   // TODO: 
   // 1) Here, create an onClick function that when the state is clicked, it renders the correct donations
   // 2) Make the display of these buttons inline so they appear horizontally instead of vertically. 
+  // 3) Fix bug where this state button has to be clicked twice for the stateId to update. This may require a change in 
+  // the way we create our components (use class components instead of method ones.)
   const onClick = () => {
-    setStateId(props.state);
-    console.log(state_id);
+    setStateId(props.state)
   }
   return (
     <div>
