@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 
 import "./state-button.css";
@@ -6,11 +6,11 @@ import "./state-button.css";
 
 
 function State(props) {
-  const [stateId,setStateId] = useState(null);
+  const [stateId, setStateId] = useState(null);
 
   useEffect(() => {
     props.P_stateSetter(stateId);
-}, [stateId, props]);
+  }, [stateId, props]);
   // TODO: 
   // 1) Here, create an onClick function that when the state is clicked, it renders the correct donations
   // 2) Make the display of these buttons inline so they appear horizontally instead of vertically. 
@@ -20,14 +20,16 @@ function State(props) {
     setStateId(props.state)
   }
   return (
-    <div>
-      <Button style={{backgroundColor: "#FFCF99", 
-                      height: "100px", 
-                      width: "100px"}} 
-              onClick={() => onClick()}>
-          {props.abbreviation}
+    <div id={props.state}>
+      <Button style={{
+        backgroundColor: "#FFCF99",
+        height: "100px",
+        width: "100px"
+      }}
+        onClick={() => onClick()}>
+        {props.abbreviation}
       </Button>
-      <h1>{props.state}</h1> 
+      <h1>{props.state}</h1>
     </div>
   );
 }
