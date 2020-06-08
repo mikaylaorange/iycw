@@ -8,12 +8,6 @@ import { TextField } from "@material-ui/core";
 //TODO: Add fonts to use for the site and clean this page up.
 function App() {
   const [statesList, setStatesList] = useState([]);
-  const [P_state, P_setState] = useState(null);
-
-  const P_wrapperSetState = val => {
-    P_setState(val);
-  };
-
   /** useEffect to retrieve all state names from firestore. The state name is the collection ID, 
    * so that will be passed down to the StateButton component. This is because we determine which
    * state is clicked within that component.
