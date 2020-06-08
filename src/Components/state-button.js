@@ -1,37 +1,69 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Button } from "@material-ui/core";
-
 import "./state-button.css";
+import Donations from "./donations";
 
-
-
-function State(props) {
-  const [stateId, setStateId] = useState(null);
-
-  useEffect(() => {
-    props.P_stateSetter(stateId);
-  }, [stateId, props]);
-  // TODO: 
-  // 1) Here, create an onClick function that when the state is clicked, it renders the correct donations
-  // 2) Make the display of these buttons inline so they appear horizontally instead of vertically. 
-  // 3) Fix bug where this state button has to be clicked twice for the stateId to update. This may require a change in 
-  // the way we create our components (use class components instead of method ones.)
-  const onClick = () => {
-    setStateId(props.state)
+class State extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {stateId: null,
+                  isStatesPage: true,
+                  isDonationsPage: false}
   }
-  return (
-    <div id={props.state}>
-      <Button style={{
+  onClick = e => {
+    e.preventDefault();
+    this.setState(
+      {
+        stateId: this.props.stateName,
+        isStatesPage: false,
+        isDonationsPage: true
+      },
+      () => console.log(this.state.stateId)
+    );
+  };
+  onHide = e => {
+    e.preventDefault();
+    this.setState(
+      {
+        stateId: null,
+        isStatesPage: true,
+        isDonationsPage: false
+      }
+    )
+  }
+  render() {
+    const donationsPage = (
+      <div>
+          {this.props.funds.map((fund, key) => (
+          <Donations key={key}
+            name={fund.name}
+            url={fund.url}
+           />
+        )
+        )}
+        <Button style={{backgroundColor: "white"}}
+                onClick={this.onHide}>Hide</Button>
+        </div>
+    )
+      const statesPage = (
+        
+<div id={this.props.stateName}>
+  
+     <Button style={{
         backgroundColor: "#FFCF99",
         height: "100px",
         width: "100px"
       }}
-        onClick={() => onClick()}>
-        {props.abbreviation}
+       onClick={this.onClick} >
+        {this.props.abbreviation}
       </Button>
-      <h1>{props.state}</h1>
+      <h1>{this.props.stateName}</h1>      
     </div>
-  );
-}
+      )
+    return (this.state.isStatesPage ? statesPage : donationsPage)
+    
+    }
+      
+  }
 
-export default State;
+ export default State;
