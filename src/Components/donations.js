@@ -5,13 +5,14 @@ function Donations(props) {
   return (
     <div>
       <img src={require('../blm.png')} alt="black lives matter"/>
-      <Button onClick={(e) =>{
+      <Button style={{backgroundColor: "white"}} onClick={(e) =>{
           e.preventDefault();
           window.location.href=props.url;
         }}
       >
         Donate
       </Button>
+      
       <h1>{props.name}</h1>
     </div>
   )

@@ -21,6 +21,16 @@ class State extends React.Component {
       () => console.log(this.state.stateId)
     );
   };
+  onHide = e => {
+    e.preventDefault();
+    this.setState(
+      {
+        stateId: null,
+        isStatesPage: true,
+        isDonationsPage: false
+      }
+    )
+  }
   render() {
     const donationsPage = (
       <div>
@@ -31,6 +41,8 @@ class State extends React.Component {
            />
         )
         )}
+        <Button style={{backgroundColor: "white"}}
+                onClick={this.onHide}>Hide</Button>
         </div>
     )
       const statesPage = (
