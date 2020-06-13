@@ -3,7 +3,6 @@
   background-color: #323031;
 
 }
-
 .App-header {
   background-color: #323031;
   min-height: 100vh;
@@ -20,4 +19,10 @@
 }
 .headline {
   font-size: xx-large;
+  font-family: Saira;
+  font-weight: bold;
+}
+
+.states-list{
+  margin: 5% 0% 5% 0%;
 }

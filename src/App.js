@@ -1,12 +1,29 @@
 import firestoreRef from './firebase';
 import React, { useEffect, useState } from "react";
-
 import "./App.css";
 import States from "./Components/state-button";
 import { TextField } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: "transparent",
+    width: "510px",
+    height: "66px",
+    border: "2px solid #EADEDA",
+    borderRadius: "15px",
+  },
+  input: {
+    fontSize: 30,
+    color: "#EADEDA",
+    top: "300%",
+    textAlign: "center",
+    marginTop: "2%",
+  }
+})
 //TODO: Add fonts to use for the site and clean this page up.
 function App() {
+  const classes = useStyles();
   const [statesList, setStatesList] = useState([]);
   /** useEffect to retrieve all state names from firestore. The state name is the collection ID, 
    * so that will be passed down to the StateButton component. This is because we determine which
@@ -42,17 +59,23 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <h1 className="headline">Select A State</h1>
-        <TextField type="search" id="input" onChange={search} variant="outlined" />
-
-        {statesList.map((states, key) => (
-          <States key={key}
-            stateName={states[0]}
-            abbreviation={states[1]}
-            funds={states[2]}
-          />
-        )
-        )}
+        <h1 className="headline">If You Can't Walk</h1>
+        <TextField className={classes.root} placeholder="Search for a State" type="search" id="input" onChange={search} InputProps={{
+          classes: {
+            input: classes.input,
+          },
+          disableUnderline: true
+        }} />
+        <div className="states-list">
+          {statesList.map((states, key) => (
+            <States key={key}
+              stateName={states[0]}
+              abbreviation={states[1]}
+              funds={states[2]}
+            />
+          )
+          )}
+        </div>
       </div>
     </div>
   );
