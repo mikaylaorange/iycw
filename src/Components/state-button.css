@@ -5,3 +5,26 @@
 .state-button {
   background-color: darkkhaki;
 }
+
+.state-div{
+  background-color: transparent;
+  border: 2px solid #EADEDA;
+  height: 213px;
+  width: 347px;
+  border-radius: 15px;
+  margin: 0% 0% 20% 0%;
+  position: relative;
+  display: flex;
+}
+.state-div div{
+  font-family: Saira;
+}
+.view{
+   width: 131px;
+   height: 41px;
+}
+.view-wrapper{
+  position: absolute;
+   top: 20%; 
+   left: 30%;
+}

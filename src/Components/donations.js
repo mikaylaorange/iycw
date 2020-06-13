@@ -3,17 +3,16 @@ import { Button } from "@material-ui/core";
 
 function Donations(props) {
   return (
-    <div>
-      <img src={require('../blm.png')} alt="black lives matter"/>
-      <Button style={{backgroundColor: "white"}} onClick={(e) =>{
-          e.preventDefault();
-          window.location.href=props.url;
-        }}
+    <div style={{ display: "block", justifyContent: "center" }}>
+      <img style={{ width: "128px", height: "128px" }} src={require('../blm.png')} alt="black lives matter" />
+      <h1 style={{ fontSize: "calc(10px + 2vmin)" }}>{props.name}</h1>
+      <Button style={{ backgroundColor: "white", width: "128px" }} onClick={(e) => {
+        e.preventDefault();
+        window.location.href = props.url;
+      }}
       >
         Donate
       </Button>
-      
-      <h1>{props.name}</h1>
     </div>
   )
 }

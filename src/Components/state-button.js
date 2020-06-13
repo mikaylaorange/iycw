@@ -6,9 +6,11 @@ import Donations from "./donations";
 class State extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {stateId: null,
-                  isStatesPage: true,
-                  isDonationsPage: false}
+    this.state = {
+      stateId: null,
+      isStatesPage: true,
+      isDonationsPage: false
+    }
   }
   onClick = e => {
     e.preventDefault();
@@ -34,36 +36,32 @@ class State extends React.Component {
   render() {
     const donationsPage = (
       <div>
-          {this.props.funds.map((fund, key) => (
+        {this.props.funds.map((fund, key) => (
           <Donations key={key}
             name={fund.name}
             url={fund.url}
-           />
+          />
         )
         )}
-        <Button style={{backgroundColor: "white"}}
-                onClick={this.onHide}>Hide</Button>
-        </div>
+        <Button style={{ backgroundColor: "white" }}
+          onClick={this.onHide}>Hide</Button>
+      </div>
     )
-      const statesPage = (
-        
-<div id={this.props.stateName}>
-  
-     <Button style={{
-        backgroundColor: "#FFCF99",
-        height: "100px",
-        width: "100px"
-      }}
-       onClick={this.onClick} >
-        {this.props.abbreviation}
-      </Button>
-      <h1>{this.props.stateName}</h1>      
-    </div>
-      )
+    const statesPage = (
+      <div id={this.props.stateName} className="state-div">
+        <div className="view-wrapper">
+          <p style={{ color: "#EADEDA" }}>{this.props.stateName}</p>
+          <Button
+            onClick={this.onClick} className="view" style={{ border: "2px solid #EADEDA", borderRadius: "15px", }}>
+            <p style={{ color: "#EADEDA" }}>View</p>
+          </Button>
+        </div>
+      </div>
+    )
     return (this.state.isStatesPage ? statesPage : donationsPage)
-    
-    }
-      
+
   }
 
- export default State;
+}
+
+export default State;
