@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap');
+
 .App {
   text-align: center;
   background-color: #323031;
 
 }
+
 .App-header {
   background-color: #323031;
   min-height: 100vh;
@@ -19,10 +22,4 @@
 }
 .headline {
   font-size: xx-large;
-  font-family: Saira;
-  font-weight: bold;
-}
-
-.states-list{
-  margin: 5% 0% 5% 0%;
 }
