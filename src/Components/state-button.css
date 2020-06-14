@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap');
 .bail-funds-div {
   margin: 0% 0% 10% 0%;
+}
+
+.donations-div {
+  width: 347px;
+  height: 213px;
+  border: 2px solid #EADEDA;
+  overflow-y: scroll;
+  border-radius: 15px;
+}
+.donations-div div{
+  font-family: Saira;
 }
 
 .state-button {
@@ -25,6 +37,7 @@
 }
 .view-wrapper{
   position: absolute;
+  
    top: 20%; 
    left: 30%;
 }

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap');
-
 .App {
   text-align: center;
   background-color: #323031;
@@ -21,4 +20,7 @@
 }
 .headline {
   font-size: xx-large;
+  font-family: Saira;
+  font-weight: bold;
+  color: #EADEDA;
 }
