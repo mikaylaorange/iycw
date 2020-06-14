@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './firebase.js';
+import "./firebase.js";
 import "./index.css";
 import App from "./App";
+import Landing from "./Landing";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App/> */}
+    <Landing />
   </React.StrictMode>,
   document.getElementById("root")
 );
