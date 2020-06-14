@@ -9,7 +9,6 @@ class State extends React.Component {
     this.state = {
       stateId: null,
       isStatesPage: true,
-      isDonationsPage: false
     }
   }
   onClick = e => {
@@ -17,34 +16,37 @@ class State extends React.Component {
     this.setState(
       {
         stateId: this.props.stateName,
-        isStatesPage: false,
-        isDonationsPage: true
+        isStatesPage: !this.state.isStatesPage,
       },
       () => console.log(this.state.stateId)
     );
   };
-  onHide = e => {
-    e.preventDefault();
-    this.setState(
-      {
-        stateId: null,
-        isStatesPage: true,
-        isDonationsPage: false
-      }
-    )
-  }
+
   render() {
     const donationsPage = (
       <div>
-        {this.props.funds.map((fund, key) => (
+        <div id={this.props.stateName} className="state-div">
+        <div className="view-wrapper">
+          <p style={{ color: "#EADEDA" }}>{this.props.stateName}</p>
+          <Button
+            onClick={this.onClick} className="view" style={{ 
+              border: "2px solid #EADEDA", 
+              borderRadius: "15px",
+              color: "#EADEDA"  }}>
+                {this.state.isStatesPage ? "View" : "Hide"}
+          </Button>
+        </div>
+      </div>
+      <div className="donations-div">
+      {this.props.funds.map((fund, key) => (
           <Donations key={key}
             name={fund.name}
             url={fund.url}
           />
         )
+        
         )}
-        <Button style={{ backgroundColor: "white" }}
-          onClick={this.onHide}>Hide</Button>
+        </div>
       </div>
     )
     const statesPage = (
@@ -52,8 +54,11 @@ class State extends React.Component {
         <div className="view-wrapper">
           <p style={{ color: "#EADEDA" }}>{this.props.stateName}</p>
           <Button
-            onClick={this.onClick} className="view" style={{ border: "2px solid #EADEDA", borderRadius: "15px", }}>
-            <p style={{ color: "#EADEDA" }}>View</p>
+            onClick={this.onClick} className="view" style={{ 
+              border: "2px solid #EADEDA", 
+              borderRadius: "15px",
+              color: "#EADEDA"  }}>
+                {this.state.isStatesPage ? "View" : "Hide"}
           </Button>
         </div>
       </div>

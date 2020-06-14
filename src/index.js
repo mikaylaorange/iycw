@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 import "./firebase.js";
 import "./index.css";
 import App from "./App";
-import Landing from "./Landing";
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <Landing />
-  </React.StrictMode>,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById("root")
 );
 
