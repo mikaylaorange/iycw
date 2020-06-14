@@ -27,7 +27,6 @@ function Landing() {
         <div className="names">
           <div className="names-wrapper">
             <p className="names-list">{names}</p>
-            {/* <br /> */}
             <p className="names-list" style={{ textAlign: "center" }}>
               AND MANY MORE
             </p>
