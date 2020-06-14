@@ -1,0 +1,128 @@
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15% 0% 0% 0%;
+}
+.landing-content-wrapper {
+  display: flex;
+  height: 70vh;
+  margin: 2% 0% 0% 0%;
+}
+.landing-div {
+  background-color: #323031;
+  min-height: 100vh;
+  max-width: ;
+}
+.landing-headline {
+  display: flex;
+  justify-content: center;
+}
+.landing-text {
+  margin: 3% 0% 0% 0%;
+  font-family: Saira;
+  font-size: 34px;
+  font-weight: bold;
+  color: #eadeda;
+}
+.names {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  border-right: 2px solid #eadeda;
+}
+.names-list {
+  color: #eadeda;
+  font-weight: bold;
+  font-size: 24px;
+}
+.names-wrapper {
+  width: 70%;
+  height: 50%;
+  margin-top: 10%;
+}
+.objective {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0% 0% 0% 10%;
+}
+.objective li {
+  margin: 0% 0% 5% 0%;
+  color: #eadeda;
+  font-weight: bold;
+  font-size: 24px;
+}
+.objective-wrapper {
+  height: 50%;
+  margin-top: 24%;
+}
+.scrolling-names {
+  display: none;
+  color: #eadeda;
+  font-weight: bold;
+}
+.quote {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0% 0% 0%;
+}
+.quote-wrapper {
+  width: 30%;
+  text-align: center;
+  color: #eadeda;
+  font-size: 18px;
+}
+@media (max-width: 850px) {
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20% 0% 0% 0%;
+  }
+  .landing-content-wrapper {
+    display: block;
+    height: auto;
+    margin: 5% 0% 0% 0%;
+  }
+  .landing-text {
+    font-size: xx-large;
+  }
+  .names {
+    display: block;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid #eadeda;
+  }
+  .names-list {
+    font-size: 18px;
+    display: none;
+  }
+  .names-wrapper {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .objective {
+    margin: 0;
+  }
+  .objective li {
+    margin: 0% 0% 15% 0%;
+    font-size: 20px;
+  }
+  .objective-wrapper {
+    height: 50%;
+    margin-top: 10%;
+  }
+  .scrolling-names {
+    display: block;
+  }
+  .quote {
+    margin: 10% 0% 0% 0%;
+  }
+  .quote-wrapper {
+    width: auto;
+  }
+}
