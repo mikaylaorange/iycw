@@ -27,6 +27,10 @@ function Landing() {
         <div className="names">
           <div className="names-wrapper">
             <p className="names-list">{names}</p>
+            {/* <br /> */}
+            <p className="names-list" style={{ textAlign: "center" }}>
+              AND MANY MORE
+            </p>
             <div className="scrolling-names">
               <TextScroll mode="horizontal" text={names} speed={5000} />
             </div>
@@ -37,7 +41,7 @@ function Landing() {
             <ul style={{ listStyle: "none " }}>
               <li>Your support helps them....</li>
               <li>Your support helps us...</li>
-              <li>Your support helps the everyone ...</li>
+              <li>Your support helps everyone ...</li>
               <li>If You Can't Walk Then...</li>
             </ul>
             <div className="button-wrapper">
