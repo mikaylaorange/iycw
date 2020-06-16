@@ -10,7 +10,8 @@ const useStyles = makeStyles({
     border: "2px solid #EADEDA",
   },
   input: {
-    fontSize: 30,
+    fontSize: "120%",
+    fontFamily: "Saira",
     color: "#EADEDA",
     top: "300%",
     textAlign: "center",

@@ -1,13 +1,9 @@
 import React from "react";
 import "./Landing.css";
 import { Button } from "@material-ui/core";
-import TextScroll from "react-textscroll";
-import history from '../history';
-import StatesPage from "./states-page";
-
+import history from "../history";
 
 function Landing() {
-
   const names = [
     `EMMET TILL - JAMEE JOHNSON - ERIC GARNER - JOHN CRAWFORD II - MICHAEL BROWN -
     LAQUAN MCDONALD - SANDRA BLAND - TANISHA ANDERSON - WALTER SCOTT -
@@ -31,13 +27,9 @@ function Landing() {
         <div className="names">
           <div className="names-wrapper">
             <p className="names-list">{names}</p>
-            {/* <br /> */}
             <p className="names-list" style={{ textAlign: "center" }}>
               AND MANY MORE
             </p>
-            <div className="scrolling-names">
-              <TextScroll mode="horizontal" text={names} speed={5000} />
-            </div>
           </div>
         </div>
         <div className="objective">
@@ -49,11 +41,14 @@ function Landing() {
               <li>If You Can't Walk Then...</li>
             </ul>
             <div className="button-wrapper">
-              <Button style={{ 
-                backgroundColor: "#eadeda", 
-                color: "#323031",
-                width: "40%" }}
-                onClick={() => history.push('/states')}>
+              <Button
+                style={{
+                  backgroundColor: "#eadeda",
+                  color: "#323031",
+                  width: "40%",
+                }}
+                onClick={() => history.push("/states")}
+              >
                 Donate
               </Button>
             </div>

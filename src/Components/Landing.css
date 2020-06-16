@@ -94,7 +94,7 @@
     font-size: xx-large;
   }
   .names {
-    display: block;
+    display: none;
     justify-content: center;
     width: auto;
     height: auto;
