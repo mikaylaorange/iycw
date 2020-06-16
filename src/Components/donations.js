@@ -7,7 +7,7 @@ function Donations(props) {
       <h1 style={{ fontSize: "calc(10px + 2vmin)", color: "#EADEDA" }}>{props.name}</h1>
       <Button style={{ backgroundColor: "#EADEDA", width: "128px" }} onClick={(e) => {
         e.preventDefault();
-        window.location.href = props.url;
+        window.open(props.url, "_blank");
       }}
       >
         Donate
