@@ -76,7 +76,6 @@ function StatesPage() {
             },
             disableUnderline: true,
           }}
-          placeholderStyle={{fontSize: "12"}}
         />
         <div>
           {statesList.map((states, key) => (
