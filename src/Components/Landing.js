@@ -35,9 +35,9 @@ function Landing() {
         <div className="objective">
           <div className="objective-wrapper">
             <ul style={{ listStyle: "none " }}>
-              <li>Your support helps them....</li>
+              <li>Your support helps them...</li>
               <li>Your support helps us...</li>
-              <li>Your support helps everyone ...</li>
+              <li>Your support helps everyone...</li>
               <li>If You Can't Walk Then...</li>
             </ul>
             <div className="button-wrapper">
