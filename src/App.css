@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap);
 .App {
   text-align: center;
   background-color: #323031;
@@ -22,5 +22,19 @@
   font-size: xx-large;
   font-family: Saira;
   font-weight: bold;
-  color: #EADEDA;
+  color: #eadeda;
+}
+
+.textfield {
+  background-color: transparent;
+  width: 510px;
+  height: 66px;
+  border-radius: 15px;
+}
+
+@media (max-width: 850px) {
+  .textfield {
+    width: auto;
+    height: auto;
+  }
 }
