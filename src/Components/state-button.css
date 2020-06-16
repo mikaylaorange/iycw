@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap");
+.bail-funds-div {
+  margin: 0% 0% 10% 0%;
+}
+.donations-div {
+  width: 347px;
+  height: 213px;
+  border: 2px solid #eadeda;
+  overflow-y: scroll;
+  border-radius: 15px;
+}
+.donations-div div {
+  font-family: Saira;
+}
+.donation-view {
+  visibility: hidden;
+}
+.donation-wrapper {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  transition: 2s;
+}
+.state-button {
+  background-color: darkkhaki;
+}
+.state-div {
+  background-color: transparent;
+  border: 2px solid #eadeda;
+  height: 213px;
+  width: 347px;
+  border-radius: 15px;
+  margin: 20% 0% 5% 0%;
+  position: relative;
+  display: flex;
+}
+.state-div div {
+  font-family: Saira;
+}
+.state-wrapper {
+  position: relative;
+  width: auto;
+}
+.state-page-div {
+  left: 0;
+  position: relative;
+  transition: 2s;
+}
+.view,
+.donation-view {
+  width: 131px;
+  height: 41px;
+}
+.view-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+@media (max-width: 850px) {
+  .donation-view {
+    visibility: visible;
+    background-color: rebeccapurple;
+  }
+  .donation-wrapper {
+    transition: 1s;
+  }
+  .state-page-div {
+    transition: 1s;
+  }
+}
