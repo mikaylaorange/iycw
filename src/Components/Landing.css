@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap");
 .button-wrapper {
   display: flex;
   justify-content: center;
@@ -12,7 +12,6 @@
 .landing-div {
   background-color: #323031;
   min-height: 100vh;
-  /* max-width: ; */
 }
 .landing-headline {
   display: flex;
@@ -55,7 +54,6 @@
   font-weight: bold;
   font-size: 24px;
   font-family: Saira;
-
 }
 .objective-wrapper {
   height: 50%;
@@ -77,7 +75,6 @@
   color: #eadeda;
   font-size: 18px;
   font-family: Saira;
-
 }
 @media (max-width: 850px) {
   .button-wrapper {
@@ -124,6 +121,9 @@
   }
   .scrolling-names {
     display: block;
+  }
+  ul {
+    padding-inline-start: 0px;
   }
   .quote {
     margin: 10% 0% 0% 0%;
