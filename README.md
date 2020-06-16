@@ -21,7 +21,7 @@
 
  • Google Tech Exchange Scholar
  
- • [Learn more about me !](https://www.linkedin.com/in/mikaylaorange/)
+ • [Learn more about me!](https://www.linkedin.com/in/mikaylaorange/)
 </div>
 <br/>
 
