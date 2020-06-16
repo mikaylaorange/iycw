@@ -35,9 +35,9 @@ function Landing() {
             <p className="names-list" style={{ textAlign: "center" }}>
               AND MANY MORE
             </p>
-            <div className="scrolling-names">
+            {/* <div className="scrolling-names">
               <TextScroll mode="horizontal" text={names} speed={5000} />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="objective">
